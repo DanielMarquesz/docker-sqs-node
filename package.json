@@ -1,0 +1,31 @@
+{
+  "name": "docker-node-sqs",
+  "version": "1.0.0",
+  "description": "docker based environment to work with AWS SQS using nodeJs To know more Read my Blog - [NodeJS Consumer for AWS SQS using Docker](https://rajislearning.com/nodejs-consumer-for-aws-sqs-using-docker/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "write": "node write_message.js",
+    "write:10": "for i in {1..10}; do node write_message.js; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajdeol/docker-node-sqs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajdeol/docker-node-sqs/issues"
+  },
+  "homepage": "https://github.com/rajdeol/docker-node-sqs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1328.0",
+    "sqs-consumer": "^7.0.2",
+    "winston": "^3.8.2"
+  }
+}
